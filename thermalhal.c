@@ -43,7 +43,7 @@
 #define THERMAL_DIR             "thermal_zone"
 #define CPU_ONLINE_FILE_FORMAT  "/sys/devices/system/cpu/cpu%d/online"
 
-#define RPM_FAN_FILE            "/sys/kernel/debug/tegra_fan/cur_rpm"
+#define RPM_FAN_FILE            "/sys/devices/pwm-fan/cur_pwm"
 
 #define TRIP_POINT              "trip_point"
 #define THROTTLING_THRESHOLD    "passive"
