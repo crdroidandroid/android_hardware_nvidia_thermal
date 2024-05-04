@@ -22,7 +22,7 @@
 #include <android/log.h>
 #include <utils/Log.h>
 #include <math.h>
-#include "Thermal.h"
+#include "Thermal-hidl.h"
 #include "thermalhal.h"
 
 namespace android {

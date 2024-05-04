@@ -22,7 +22,7 @@
 #include <android/log.h>
 #include <hidl/HidlTransportSupport.h>
 #include <hardware/thermal.h>
-#include "Thermal.h"
+#include "Thermal-hidl.h"
 
 using android::sp;
 using android::status_t;

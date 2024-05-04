@@ -17,8 +17,8 @@ cc_binary {
     srcs: [
         "thermalhal.c",
         "parse_thermal.c",
-        "Thermal.cpp",
-        "service.cpp",
+        "Thermal-hidl.cpp",
+        "service-hidl.cpp",
     ],
 
     shared_libs: [
