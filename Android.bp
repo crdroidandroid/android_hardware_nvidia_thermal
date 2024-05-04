@@ -39,3 +39,30 @@ cc_binary {
     vendor: true,
 
 }
+
+cc_binary {
+
+    srcs: [
+        "thermalhal.c",
+        "parse_thermal.c",
+        "Thermal-aidl.cpp",
+        "service-aidl.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libxml2",
+        "libhardware",
+        "libutils",
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.thermal-V2-ndk",
+    ],
+
+    name: "android.hardware.thermal-service-nvidia",
+    init_rc: ["android.hardware.thermal-service-nvidia.rc"],
+    vintf_fragments: ["android.hardware.thermal-service-nvidia.xml"],
+    relative_install_path: "hw",
+    vendor: true,
+
+}
